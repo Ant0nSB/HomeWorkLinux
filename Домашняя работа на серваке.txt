@@ -1,0 +1,83 @@
+ec2-user@ip-172-31-33-20 Anton_SB]$ cat /Anton_SB
+cat: /Anton_SB: No such file or directory
+[ec2-user@ip-172-31-33-20 Anton_SB]$ ls
+askname.sh  box.txt  masha_shi  myfirstbashscript.sh  new.sh  script  sleeper.sh  today.sh
+[ec2-user@ip-172-31-33-20 Anton_SB]$ sleeper.sh
+-bash: /home/ec2-user/bin/sleeper.sh: Permission denied
+[ec2-user@ip-172-31-33-20 Anton_SB]$ vim sleeper.sh
+[ec2-user@ip-172-31-33-20 Anton_SB]$ ./sleeper.sh
+./sleeper.sh: line 14: syntax error: unexpected end of file
+[ec2-user@ip-172-31-33-20 Anton_SB]$ vim sleeper.sh
+[ec2-user@ip-172-31-33-20 Anton_SB]$ ./sleeper.sh
+./sleeper.sh: line 4: date+%H:%M:%S: command not found
+ - 114 Процессов
+./sleeper.sh: line 4: date+%H:%M:%S: command not found
+ - 114 Процессов
+./sleeper.sh: line 4: date+%H:%M:%S: command not found
+ - 114 Процессов
+./sleeper.sh: line 4: date+%H:%M:%S: command not found
+ - 114 Процессов
+./sleeper.sh: line 4: date+%H:%M:%S: command not found
+ - 114 Процессов
+./sleeper.sh: line 4: date+%H:%M:%S: command not found
+ - 114 Процессов
+./sleeper.sh: line 4: date+%H:%M:%S: command not found
+ - 114 Процессов
+./sleeper.sh: line 4: date+%H:%M:%S: command not found
+ - 114 Процессов
+./sleeper.sh: line 4: date+%H:%M:%S: command not found
+ - 114 Процессов
+./sleeper.sh: line 4: date+%H:%M:%S: command not found
+ - 114 Процессов
+[ec2-user@ip-172-31-33-20 Anton_SB]$ vim sleeper.sh
+[ec2-user@ip-172-31-33-20 Anton_SB]$ ./sleeper.sh
+20:07:48 - 113 Процессов
+20:07:50 - 113 Процессов
+20:07:52 - 113 Процессов
+20:07:54 - 113 Процессов
+20:07:56 - 113 Процессов
+20:07:58 - 113 Процессов
+20:08:00 - 113 Процессов
+20:08:02 - 113 Процессов
+20:08:04 - 113 Процессов
+20:08:06 - 113 Процессов
+[ec2-user@ip-172-31-33-20 Anton_SB]$ ls*.txt
+-bash: ls*.txt: command not found
+[ec2-user@ip-172-31-33-20 Anton_SB]$ ls .txt
+ls: cannot access .txt: No such file or directory
+[ec2-user@ip-172-31-33-20 Anton_SB]$ ls
+100.txt  53.txt  57.txt  61.txt  65.txt  69.txt  73.txt  77.txt  81.txt  85.txt  89.txt  93.txt  97.txt      box.txt               os_info.txt         sleeper.sh
+50.txt   54.txt  58.txt  62.txt  66.txt  70.txt  74.txt  78.txt  82.txt  86.txt  90.txt  94.txt  98.txt      masha_shi             os_name.txt         today.sh
+51.txt   55.txt  59.txt  63.txt  67.txt  71.txt  75.txt  79.txt  83.txt  87.txt  91.txt  95.txt  99.txt      myfirstbashscript.sh  processor_info.txt
+52.txt   56.txt  60.txt  64.txt  68.txt  72.txt  76.txt  80.txt  84.txt  88.txt  92.txt  96.txt  askname.sh  new.sh                script
+[ec2-user@ip-172-31-33-20 Anton_SB]$ cat processor_info.txt
+Architecture:        x86_64
+CPU op-mode(s):      32-bit, 64-bit
+Byte Order:          Little Endian
+CPU(s):              2
+On-line CPU(s) list: 0,1
+Thread(s) per core:  2
+Core(s) per socket:  1
+Socket(s):           1
+NUMA node(s):        1
+Vendor ID:           AuthenticAMD
+CPU family:          23
+Model:               1
+Model name:          AMD EPYC 7571
+Stepping:            2
+CPU MHz:             2199.988
+BogoMIPS:            4399.97
+Hypervisor vendor:   KVM
+Virtualization type: full
+L1d cache:           32K
+L1i cache:           64K
+L2 cache:            512K
+L3 cache:            8192K
+NUMA node0 CPU(s):   0,1
+Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr arat npt nrip_save
+[ec2-user@ip-172-31-33-20 Anton_SB]$ cat os_info.txt
+NAME="Amazon Linux"
+[ec2-user@ip-172-31-33-20 Anton_SB]$ cat os_name.txt
+Amazon Linux
+[ec2-user@ip-172-31-33-20 Anton_SB]$
+
